@@ -21,7 +21,7 @@ const all_product =[
     },
     {   
         id:0,
-        img:'https://b.f1.photo.talk.zdn.vn/1796583762042893203/b6636f957611b94fe000.jpg',
+        img:'https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/bf198fdd889646c81f87.jpg?v=1648487563058',
         name:'Hoa sáp bó 5 bông',
         type:'B5-4',
         price:150000
