@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift By Boo</title>
+    <link rel="stylesheet" href="GBB.css">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="Wax.css">
+    <script src="https://kit.fontawesome.com/9a6d25af5b.js" crossorigin="anonymous"></script>       
+</head>
+<body>
+    <div class="header">
+        <div id="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img id="logo_img" src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/261161121_100714979122532_8724520511518983581_n.jpg?v=1648477606836">
+                </a>
+            </div>
+            <div class="search">
+                <div class="input-search">
+                    <input id="pd_input" placeholder="Tìm kiếm sản phẩm"><div id="show_product-search">
+                    
+                </div></div>
+                <div class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <ul id="pc_option_box">
+                <li class="item"><a href="index.html" class="item">Trang chủ</a></li>
+                    <li class="item">Danh mục 
+                        <span style="padding-left: 4px;"><i class="fa-solid fa-caret-down"></i></span>
+                        <ul class="DM__list">
+                            <li class="DM__item"><a href="Wax.html" class="">Hoa sáp</a></li>
+                            <li class="DM__item"><a href="Emulsion.html" class="">Hoa nhũ</a></li>
+                            <li class="DM__item"><a href="Bear.html" class="">Hoa gấu</a></li>
+                            <li class="DM__item"><a href="Box.html" class="">Hộp hoa</a></li>
+                            <li class="DM__item"><a href="Chocolate.html" class="">Chocolate</a></li>
+                            <li class="DM__item"><a href="Accessory.html" class="">Phụ kiện</a></li>
+                        </ul>
+                    </li>     
+            </ul>
+            <a href="Payment.html" id="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a> 
+            <div id="mobile_option_box">
+                <label for="mobile_option_open"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="mobile_option_open">
+                <div id="overlay"></div>
+                <div id="mobile_option_bar">
+                    <div id="close_box">
+                        <button id="mobile_option_bar--close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div id="simple_search">
+                        <div class="mobile_search">
+                            <input type="text" class="search_input" placeholder="Tìm kiếm sản phẩm">
+                            <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <ul class="search_list" style="display:block;">
+    
+                        </ul>
+                    </div>
+                    <ul id="mobile_option">
+                        <li><a href="index.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Trang chủ&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Wax.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hoa sáp&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Emulsion.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hoa nhũ&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Bear.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hoa gấu&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Box.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hộp hoa&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Chocolate.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Chocolate&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Accessory.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Phụ kiện&emsp;<i class="fa-solid fa-angle-right"></i></a></li> 
+                    </ul>
+                </div>
+            </div>  
+    
+        </div>
+    </div>
+    
+      <div class="slideshow-container">
+          <div class="mySlides fade">                
+               <img class="image" src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/1.png?v=1649137680154" style="width:100%">                
+          </div>          
+          <div class="mySlides fade">                
+              <img class="image" src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/3.png?v=1649137972360" style="width:100%">
+          </div>
+          <div class="mySlides fade">                
+               <img class="image" src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/2.png?v=1649137969480" style="width:100%">                
+          </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+      </div> 
+      
+      
+    <div id="container">    
+        <div class="list-product wide">
+          <div class="nav__product">
+              <h2>Hoa sáp</h2>                        
+          </div>
+          <div class="item-products">
+              <div class="pd_row" id="grid__row"> 
+                <a href="./Sanpham.html?name=B5-1" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t1.15752-9/273269862_932728310749314_7537700057427991196_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=g4tF0n9j0AEAX90kNvc&_nc_ht=scontent.fhan3-3.fna&oh=03_AVJFmE7kR8sNsnKfNPU6bUgEvHn7p3BTKht-PQw94Lv4Rg&oe=626FC28D" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 5 bông</div>
+                            <div class="price"><span>150,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=B11-3" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t1.15752-9/275039007_370117051638440_6684600310960649980_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=6v6dWz9Wk8EAX_y4PWn&_nc_ht=scontent.fhan15-2.fna&oh=03_AVJ-9a1WYV-1vjJPr7XJkbrv87xEyrUdHZRilM933EIodg&oe=62626747" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 11 bông</div>
+                            <div class="price"><span>250,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=B19-7" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/275144043_311539214403128_3068398425099233232_n.png?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=WQk-uAcEqUYAX8Zge7s&_nc_ht=scontent.fhan15-1.fna&oh=03_AVIXGyKdXpBrVHgjNmK69FOELvNYp9E9BdZyUBpebTR1bw&oe=626171DC" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 19 bông mix cẩm chướng tone hồng</div>
+                            <div class="price"><span>340,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=B21-1" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/dc2a64177a5cb402ed4d.jpg?v=1649430696182" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 21 bông mix cẩm chướng</div>
+                            <div class="price"><span>350,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <span class="btn">
+                    <a href="Wax.html" class="more_btn">Xem thêm</a>
+                </span>
+              </div>
+          </div>
+        </div>
+      
+        <div class="list-product wide">
+          <div class="nav__product">
+              <h2>Hoa Nhũ</h2>                        
+          </div>
+          <div class="item-products">
+              <div class="pd_row">
+                <a href="./Sanpham.html?name=BN19-1" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/275614055_492649159230042_2386969699804100491_n.jpg?v=1648482476098" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 19 bông nhũ đỏ mix lưới </div>
+                            <div class="price"><span>420,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=BN20-1" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/275437781_492649345896690_3586574021991339473_n.jpg?v=1648482489121" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 20 bông nhũ đỏ mix lưới </div>
+                            <div class="price"><span>440,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=BN40-2" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/275369492_492649449230013_6010513930562302265_n.jpg?v=1648482496332" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 40 bông nhũ đỏ mix voan trắng</div>
+                            <div class="price"><span>720,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=BN50-2" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/275388702_492649519230006_2386003792509776439_n.jpg?v=1648482528189" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bó 50 bông nhũ đỏ dáng tim mix voan</div>
+                            <div class="price"><span>790,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <span class="btn">
+                    <a href="Emulsion.html" class="more_btn">Xem thêm</a>
+                </span>
+              </div>
+          </div>
+        </div>
+      
+        <div class="list-product wide">
+          <div class="nav__product">
+              <h2>Hoa gấu</h2>                        
+          </div>
+          <div class="item-products ">
+              <div class="pd_row"> 
+                <a href="./Sanpham.html?name=HG-2" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Gau-2.jpg?v=1648482775174" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Hoa gấu đỏ</div>
+                            <div class="price"><span>150,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=HG-3" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Gau-3.jpg?v=1648482779236" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Hoa gấu xám</div>
+                            <div class="price"><span>150,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=GB-2" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Gau-5.jpg?v=1648482786342" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Gấu trắng</div>
+                            <div class="price"><span>250,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=GB-3" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Gau-6.jpg?v=1648482789990" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Gấu nâu</div>
+                            <div class="price"><span>250,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <span class="btn">
+                    <a href="Bear.html" class="more_btn">Xem thêm</a>
+                </span>
+              </div>
+          </div>
+      </div>
+      
+      
+      <div class="list-product wide">
+          <div class="nav__product">
+              <h2>Chocolate</h2>                        
+          </div>
+          <div class="item-products ">
+              <div class="pd_row"> 
+                <a href="./Sanpham.html?name=Matcha" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Matcha.jpg?v=1648482868482" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Matcha</div>
+                            <div class="price"><span>320,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=Ghana" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Ghana%20Bitter.jpg?v=1648483056712" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Ghana Bitter</div>
+                            <div class="price"><span>320,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=Bitter" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Bitter.jpg?v=1648483360358" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Bitter</div>
+                            <div class="price"><span>320,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./Sanpham.html?name=Lait" class="item-product ">
+                   <div class="detail__product" >
+                        <div class="detail__img">
+                           <img src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/Au%20Lait.jpg?v=1648483357082" alt="" class="img-product">
+                        </div>
+                        <div class="Information">
+                            <div class="name">Au Lait</div>
+                            <div class="price"><span>320,000 VND</span></div>
+                        </div>
+                    </div>
+                </a>
+                <span class="btn">
+                    <a href="Chocolate.html" class="more_btn">Xem thêm</a>
+                </span>
+              </div>
+          </div>
+      </div>
+    </div>
+      
+      
+  
+    
+  
+    
+        
+    <!--Footer-->
+    <div id="footer">
+        <div class="shop_contact">
+            <div class="contack_buy contact">
+                <div class="phone_icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="phone_number" style="line-height: 2em;">
+                    <small>HOTLINE (8:00-21:30)</small>
+                    <h2 class="number">0961 252 746</h2>
+                    <small>Tất cả các ngày trong tuần</small>
+                </div>
+            </div>
+            <div class="contack_feedback contact">
+                <div class="phone_icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="phone_number" style="line-height: 2em;">
+                    <small>GÓP Ý, KHIẾU NẠI (8:00-21:30)</small>
+                    <h2 class="number">0961 252 746</h2>
+                    <small>Tất cả các ngày trong tuần</small>
+                </div>
+            </div>
+            <div class="contack_link" style="line-height: 2em;">
+                <small>Gift by BOO fanpage:</small>
+                <div style="line-height: 2em;">
+                    <a href="https://www.facebook.com/giftbyboo"><i class="fab fa-facebook-square link"><small> Facebook</small></i></a>
+                    <br>
+                    <a href="https://www.instagram.com/giftbyboo/"><i class="fab fa-instagram-square link"><small> Instagram</small></i></a>
+                </div>
+            </div>
+            <div class="subscribe" style="line-height: 2em;">
+                <small>Đăng ký nhận tin mới từ Gift by BOO:</small>
+                <div style="line-height: 2em;">
+                    <input type="email" placeholder="Email">
+                    <button class="sub_btn">ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </div>
+        <div class="shop_info">
+            <small>Copyrights © 2022 by Gift by BOO.</small>
+            <br><br>
+            <small>Cơ Sở 1: </small>
+            <br>
+            <small>Cơ Sở 2: </small>
+        </div>
+    </div>
+     <script src="Product.js"></script>
+    <script src="search.js"></script>
+    <script src="Slide.js"></script>
+    <script src="Header.js"></script>
+    
+</body>
+</html>

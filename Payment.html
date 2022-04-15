@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Payment.css">
+    <link rel="stylesheet" href="Footer.css">
+    <script src="https://kit.fontawesome.com/9a6d25af5b.js" crossorigin="anonymous"></script>
+    <title>Payment</title>
+</head>
+<body>
+    <div id="ThanksScreen">
+        <div id="allOverlay"></div>
+        <div id="Thanks">
+            <button id="thanks_close"><i class="fa-solid fa-xmark"></i></button>
+            <img id="thanks_image" src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/thanks.jpg?v=1649914416817" alt="thanks">
+        </div>
+    </div>
+    <div class="header">
+        <div id="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img id="logo_img" src="https://cdn.glitch.global/9e7b5ace-9aa1-48cf-b461-f5e944cdf76f/261161121_100714979122532_8724520511518983581_n.jpg?v=1648477606836">
+                </a>
+            </div>
+            <div class="search">
+                <div class="input-search">
+                    <input id="pd_input" placeholder="Tìm kiếm sản phẩm"><div id="show_product-search">
+                    
+                </div></div>
+                <div class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <ul id="pc_option_box">
+                <li class="item"><a href="index.html" class="item">Trang chủ</a></li>
+                    <li class="item">Danh mục 
+                        <span style="padding-left: 4px;"><i class="fa-solid fa-caret-down"></i></span>
+                        <ul class="DM__list">
+                            <li class="DM__item"><a href="Wax.html" class="">Hoa sáp</a></li>
+                            <li class="DM__item"><a href="Emulsion.html" class="">Hoa nhũ</a></li>
+                            <li class="DM__item"><a href="Bear.html" class="">Hoa gấu</a></li>
+                            <li class="DM__item"><a href="Box.html" class="">Hộp hoa</a></li>
+                            <li class="DM__item"><a href="Chocolate.html" class="">Chocolate</a></li>
+                            <li class="DM__item"><a href="Accessory.html" class="">Phụ kiện</a></li>
+                        </ul>
+                    </li>     
+            </ul>
+            <a href="Payment.html" id="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a> 
+            <div id="mobile_option_box">
+                <label for="mobile_option_open"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="mobile_option_open">
+                <div id="overlay"></div>
+                <div id="mobile_option_bar">
+                    <div id="close_box">
+                        <button id="mobile_option_bar--close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div id="simple_search">
+                        <div class="mobile_search">
+                            <input type="text" class="search_input" placeholder="Tìm kiếm sản phẩm">
+                            <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <ul class="search_list" style="display:block;">
+    
+                        </ul>
+                    </div>
+                    <ul id="mobile_option">
+                        <li><a href="index.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Trang chủ&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Wax.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hoa sáp&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Emulsion.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hoa nhũ&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Bear.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hoa gấu&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Box.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Hộp hoa&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Chocolate.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Chocolate&emsp;<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="Accessory.html" class="DM_item"><i class="fa-solid fa-angle-left"></i>&emsp;Phụ kiện&emsp;<i class="fa-solid fa-angle-right"></i></a></li> 
+                    </ul>
+                </div>
+            </div>  
+    
+        </div>
+    </div>
+    <div id="container">
+        <div id="checkout_page">
+            <div id="checkout_form">
+                <h1>THÔNG TIN GIAO HÀNG</h1>
+                <form>
+                    <input data-value="name" type="text" placeholder="* Họ và tên" required> 
+                    <input data-value="email" type="text" placeholder="Email">
+                    <input data-value="phone" type="text" placeholder="* Số điện thoại" required>
+                    <select id="area_input" data-value="area">
+                        <option selected value="none" hidden>* Khu vực</option>
+                        <option value="0">Miền Bắc</option>
+                        <option value="1">Miền Nam</option>
+                    </select>
+                    <input data-value="address" type="text" placeholder="* Địa chỉ" required>
+                </form>
+                <small style="color: gray;">(*) không được để trống</small>
+            </div>
+            <div id="checkout_pay">
+                <h1>PHƯƠNG THỨC THANH TOÁN</h1>
+                <form>
+                    <span>
+                        <input id="card_payment" type="radio" value="card" name="pay">
+                        <span><i class="fa-brands fa-cc-visa"></i></span>
+                        <label for="card_payment">Thanh toán qua thẻ (ATM/Visa/MasterCard)</label>
+                    </span>
+                    <span>
+                        <input id="cod_payment" type="radio" value="cod" name="pay">
+                        <span><i class="fa-solid fa-truck"></i></span>
+                        <label for="cod_payment">Thanh toán COD</label>
+                    </span>
+                </form>
+            </div>
+        </div>
+        <div id="checkout_cart">
+            <ul id="cart_items">
+                
+            </ul>
+            <div id="coupon">
+                <input id="coupon_input" type="text" placeholder="Mã giảm giá...">
+                <button id="coupon_btn">Áp dụng</button>
+            </div>
+            <div class="total_cart">
+                <p>Tổng:</p>
+                <strong data-amount="purchase"></strong>
+            </div>
+            <div class="total_cart">
+                <small>Ưu đãi:</small>
+                <small data-amount="discount">
+                    <span>-</span>
+                    <span id="discount">0</span>
+                    <span>đ</span>
+                </small>
+            </div>
+            <div class="total_cart">
+                <small>Phí ship:</small>
+                <small data-amount="shipping">
+                    <span id="ship_cost">0</span>
+                    <span>đ</span>
+                </small>
+            </div>
+            <div class="total_cart">
+                <p>Thành tiền:</p>
+                <strong data-amount="total">
+                    <span id="total">0</span>
+                    <span>đ</span>
+                </strong>
+            </div>
+            <button id="buy_btn">HOÀN TẤT ĐƠN HÀNG</button>
+            
+        </div>  
+    </div>
+    <div id="footer">
+        <div class="shop_contact">
+            <div class="contack_buy contact">
+                <div class="phone_icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="phone_number" style="line-height: 2em;">
+                    <small>HOTLINE (8:00-21:30)</small>
+                    <h2 class="number">0961 252 746</h2>
+                    <small>Tất cả các ngày trong tuần</small>
+                </div>
+            </div>
+            <div class="contack_feedback contact">
+                <div class="phone_icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="phone_number" style="line-height: 2em;">
+                    <small>GÓP Ý, KHIẾU NẠI (8:00-21:30)</small>
+                    <h2 class="number">0961 252 746</h2>
+                    <small>Tất cả các ngày trong tuần</small>
+                </div>
+            </div>
+            <div class="contack_link" style="line-height: 2em;">
+                <small>Gift by BOO fanpage:</small>
+                <div style="line-height: 2em;">
+                    <a href="https://www.facebook.com/giftbyboo"><i class="fab fa-facebook-square link"><small> Facebook</small></i></a>
+                    <br>
+                    <a href="https://www.instagram.com/giftbyboo/"><i class="fab fa-instagram-square link"><small> Instagram</small></i></a>
+                </div>
+            </div>
+            <div class="subscribe" style="line-height: 2em;">
+                <small>Đăng ký nhận tin mới từ Gift by BOO:</small>
+                <div style="line-height: 2em;">
+                    <input type="email" placeholder="Email">
+                    <button class="btn">ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </div>
+        <div class="shop_info">
+            <small>Copyrights © 2022 by Gift by BOO.</small>
+            <br><br>
+            <small>Cơ Sở 1: </small>
+            <br>
+            <small>Cơ Sở 2: </small>
+        </div>
+    </div>
+  
+  <script src="Payment.js"></script>
+  <script src="Header.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>

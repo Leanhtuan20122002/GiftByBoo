@@ -1,0 +1,48 @@
+#footer{
+    font-family: cursive, Helvetica, sans-serif;
+  }
+  .shop_contact {
+      display: flex;
+      justify-content: space-around;
+      gap: 3em;
+      flex-wrap: wrap;
+      background-color: rgb(255, 255, 255);
+      padding: 1em;
+      border: 2px solid rgb(243, 193, 202);
+  }
+  
+  .contact {
+      display: flex;
+  }
+  
+  .phone_icon {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      color: rgb(218, 0, 0);
+  }
+  
+  .number {
+      color: rgb(218, 0, 0);
+  }
+  
+  .link {
+      font-size: 20px;
+      transition: all 0.3s ease-in-out;
+  }
+  .link:hover {
+      transform: translateX(-10px);
+  }
+  
+  .fa-facebook-square {
+      color: rgb(55, 55, 139);
+  }
+  
+  .fa-instagram-square {
+      color: rgb(112, 33, 74);
+  }
+  
+  .shop_info {
+      background-color: rgb(243, 193, 202);
+      padding: 1em;
+  }

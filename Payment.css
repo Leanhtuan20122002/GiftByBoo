@@ -1,0 +1,255 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+html {
+    min-width: 360px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Thanks screen */
+
+#ThanksScreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#allOverlay {
+    background-color: rgba(114, 114, 114, 0.767);
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#Thanks {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 60%;
+    overflow: hidden;
+}
+
+#thanks_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+#thanks_image {
+    /* max-width: 80%; */
+    /* max-height: 80%; */
+}
+
+/* Container */
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    min-height: 80vh;
+    background-color: whitesmoke;
+}
+
+#checkout_form, #checkout_pay, #checkout_cart {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#checkout_page {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    margin: 1.5em;
+    gap: 1.5em;
+    font-size: 20px;
+}
+
+#checkout_form {
+    display: grid;
+    flex: 70%;
+    padding: 1.5em;
+    border: 1px solid gray;
+}
+
+#checkout_form form {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+}
+
+#checkout_form h1 {
+    font-size: 20px;
+}
+
+#checkout_form input, #checkout_form select {
+    padding: 0.5em;
+    border: 1px solid gray;
+    border-radius: 5px;
+/*     color: rgb(94, 94, 94); */
+    color: black;
+    
+}
+
+#checkout_pay {
+    flex: 30%;
+    display: grid;
+    padding: 1em;
+    border: 1px solid gray;
+}
+
+#checkout_pay h1 {
+    font-size: 20px;
+}
+
+#checkout_pay form {
+    display: grid;  
+}
+
+#checkout_pay label {
+    font-size: clamp(15px, 2vw, 20px)
+}
+
+#checkout_cart {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid gray;
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 1.5em;
+    font-size: 20px;
+}
+
+/* List sản phẩm */
+
+#cart_items{
+    overflow-y: scroll;
+    height: clamp(200px, 35vw, 550px);
+    padding: 5px;
+}
+
+.cart_items_list {
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    height: 5em;
+}
+
+.li_name {
+    display: flex;
+    align-items: center;
+    flex: 70%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.li_soluong {
+    flex: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+.li_soluong button {
+    width: 17px;
+    height: 17px;
+    font-size: 10px;
+}
+
+.li_delete {
+    flex: 15%;
+    padding: 5px;
+    min-width: 30px;
+}
+
+.li_delete button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+.li_delete button:hover {
+    background-color: rgb(255, 196, 196);
+}
+
+#coupon {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+#coupon input, #coupon button {
+    padding: 0.5em;
+    border: 1px solid gray;
+}
+
+#coupon button {
+    color: white;
+    background-color: gray;
+}
+
+#coupon button:hover {
+    background-color: darkgray;
+}
+
+.total_cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2em;
+}
+
+#buy_btn {
+    text-align: center;
+    color: black;
+    background-color: rgb(243, 193, 202);
+    padding: 0.5em;
+    font-size: 17px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+#buy_btn:hover {
+    text-align: center;
+    color: black;
+    background-color: #ffcac1;
+    padding: 0.5em;
+    font-size: 17px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 720px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #checkout_cart {
+        margin: 0px 1.5em 1.5em 1.5em;
+    }
+
+}
